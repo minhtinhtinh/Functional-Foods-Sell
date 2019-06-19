@@ -1,0 +1,192 @@
+﻿<Fluent:RibbonWindow x:Class="milestone01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Fluent="urn:fluent-ribbon"
+        Title="Quản Lý Bán Hàng"
+        TitleBackground="LightGreen"
+        TitleForeground="Black"   
+        WindowState="Maximized"
+        WindowStyle="None"
+        ResizeMode="NoResize"                        
+        Width="1370.205" 
+        Icon="/Icons/logo.png"
+        Height="739.555"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:milestone01"
+        mc:Ignorable="d"    
+        WindowStartupLocation="CenterScreen"
+        Loaded="RibbonWindow_Loaded"
+        Closed="RibbonWindow_Closed"
+        Closing="RibbonWindow_Closing"
+        >
+    <Window.Resources>
+        <local:doublePriceToStringPriceConverter x:Key="priceConverter"/>
+        <local:idProductToNameCategoryConverter x:Key="nameCategoryConverter"/>
+        <local:descriptCategoryConverter x:Key="deScriptCategoryConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="680"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Menu-->
+        <Fluent:Ribbon Grid.Row="0" Grid.ColumnSpan="2" SelectedTabChanged="Ribbon_SelectedTabChanged">
+            <!--Backstage-->
+            <Fluent:Ribbon.Menu>
+                <Fluent:Backstage>
+                    <Fluent:BackstageTabControl>
+                        <Fluent:Button Header="Thông Tin" Click="click_About"/>
+                        <Fluent:Button Header="Thoát" Click="click_Exit"/>
+                    </Fluent:BackstageTabControl>
+                </Fluent:Backstage>
+            </Fluent:Ribbon.Menu>
+
+            <!--Tabs Master Data-->
+            <Fluent:RibbonTabItem Header="Thông Tin Sản Phẩm" KeyTip="M">
+                <Fluent:RibbonGroupBox Header="Import Dữ Liệu" Background="LightYellow">
+                    <Fluent:Button Name="importExcel" Size="Large" Width="80" Height="80" Header="Excel" LargeIcon="/Icons/excel.png" SnapsToDevicePixels="true" Click="click_Import_Excel"/>
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="Loại Sản Phẩm" Background="LightYellow">
+                    <Fluent:Button Name="addCategory" Size="Large"  Header="Add Category" Width="80" Height="80" LargeIcon="/Icons/category_add.png" SnapsToDevicePixels="true" Click="addCategory_Click"/>
+                    <Fluent:Button Name="deleteCategory" Size="Large" Header="Delete Category" Width="80" Height="80" LargeIcon="/Icons/category_delete.png" SnapsToDevicePixels="true" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="deleteCategory_Click"/>
+                    <Fluent:Button Name="editCategory" Size="Large" Header="Edite Category" Width="80" Height="80" LargeIcon="/Icons/edit_category.png" SnapsToDevicePixels="true" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="editCategory_Click"/>
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox Header="Sản Phẩm" Background="LightYellow">
+                    <Fluent:Button Name="addProduct" Size="Large"  Header="Add Product" Width="80" Height="80" LargeIcon="/Icons/add.png" SnapsToDevicePixels="true" Click="addProduct_Click"/>
+                    <Fluent:Button Name="deleteProduct" Size="Large" Header="Delete Product" Width="80" Height="80" LargeIcon="/Icons/delete.png" SnapsToDevicePixels="true" Click="deleteProduct_Click"/>
+                    <Fluent:Button Name="editProduct" Size="Large" Header="Edite Product" Width="80" Height="80" LargeIcon="/Icons/edit.png" SnapsToDevicePixels="true" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="editProduct_Click"/>
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+
+            <!--Tabs Transactions-->
+            <Fluent:RibbonTabItem Header="Thông Tin Đơn Hàng" KeyTip="T">
+                <Fluent:RibbonGroupBox Header="Giỏ Hàng">
+                    <Fluent:Button Name="Cart" Size="Large"  Header="Giỏ hàng" Width="80" Height="80" LargeIcon="/Icons/logo.png" SnapsToDevicePixels="true" Click="Cart_Click"/>
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+
+            <!--Tabs Report-->
+            <Fluent:RibbonTabItem Header="Báo Cáo" KeyTip="R">
+                <Fluent:RibbonGroupBox Header="Thống kê">
+                    <Fluent:Button Name="btnRevenue" Size="Large"  Header="Doanh thu" Width="100" Height="100" LargeIcon="/Icons/revenue.png" SnapsToDevicePixels="true" Click="btnRevenue_Click"/>
+                    <Fluent:Button Name="btnInventory" Size="Large"  Header="Doanh thu theo loại" Width="100" Height="100" LargeIcon="/Icons/inventory.png" SnapsToDevicePixels="true" Click="btnInventory_Click"/>
+                    <Fluent:Button Name="btnSellSum" Size="Large"  Header="Đã bán" Width="100" Height="100" LargeIcon="/Icons/sell.png" SnapsToDevicePixels="true" Click="btnSellSum_Click"/>
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+        </Fluent:Ribbon>
+
+        <!--List Product-->
+        <Grid Grid.Row="2" Grid.Column="0" Margin="2,0,0,0">
+            <ListView Name="listProduct" Background="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled" BorderBrush="Transparent" SelectionChanged="listProduct_SelectionChanged">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel></WrapPanel>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <EventSetter Event="PreviewMouseLeftButtonDown" Handler="ListViewItem_PreviewMouseLeftButtonDown"></EventSetter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Width="150" Margin="0,10,0,10" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="StackPanel_MouseLeftButtonDown">
+                            <Image Source="{Binding Image}" Width="140" Height="140"></Image>
+                            <TextBlock Text="{Binding Name}" TextAlignment="Center" FontWeight="Bold" TextWrapping="WrapWithOverflow" FontSize="14" Foreground="Black"></TextBlock>
+                            <TextBlock Text="{Binding Price, Converter={StaticResource priceConverter}}" TextAlignment="Center" FontSize="14" Foreground="Black"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+    <!--Fillter-->
+        <Grid Grid.Row="1" Background="LightCyan" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="240"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Tìm kiếm sản phẩm theo tên:" FontSize="18" Padding="5,5,0,0"/>
+            <TextBox Grid.Column="1" Name="textBoxFillProduct" Background="LightYellow" Height="25" FontSize="16" TextChanged="TextBoxFillProduct_TextChanged"/>
+        </Grid>    
+        
+    <!--Combobox category-->
+        <Grid Grid.Row="1" Grid.Column="1" Background="LightCyan" Margin="0,0,5,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Content="Loại Sản Phẩm" Margin="10,5,0,0" FontSize="18"></Label>
+            <ComboBox Grid.Column="1" Name="comboboxCategory" Width="360" Height="25" HorizontalAlignment="Left" SelectionChanged="comboboxCategory_SelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="16"></TextBlock>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </Grid>
+
+        <!--product detail-->
+        <Grid Grid.Row="2" Grid.Column="1" Margin="10,0,5,0" Name="grid_productDetail" Background="Transparent" Visibility="Hidden">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Margin="0,0,10,0" Name="categoryDetail" DataContext="{Binding ElementName=listProduct, Path=SelectedItem}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Thông Tin Sản Phẩm: " TextWrapping="Wrap" FontSize="18" FontStyle="Normal" FontWeight="Bold"></TextBlock>
+                    <TextBlock Name="categoryNameDetail" Margin="0,0,0,0" Text="{Binding CateID, Converter={StaticResource nameCategoryConverter}}" FontSize="18" Foreground="Orange" FontStyle="Italic" FontWeight="Bold"></TextBlock>
+                </StackPanel>
+                <TextBlock Text="{Binding Name}" Name="NameProductDetail" TextAlignment="Center" TextWrapping="Wrap" FontSize="20" Margin="0,10,0,10" Foreground="Orange" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Name="productDetail" DataContext="{Binding ElementName=listProduct, Path=SelectedItem}">
+                <StackPanel Orientation="Horizontal" Margin="0,10,5,0">
+                    <Image Name="productSelected" Source="{Binding Image}" Width="420" Height="350" HorizontalAlignment="Left"/>                  
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal" Margin="0,110,0,0" HorizontalAlignment="Left">
+                            <TextBlock Text="Giá tiền: " FontSize="18" FontWeight="Bold"></TextBlock>
+                            <TextBlock Text="{Binding Price, Converter={StaticResource priceConverter}}" Name="PriceProductDetail" TextAlignment="Left" FontSize="18" Foreground="Black"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Left">
+                            <TextBlock Text="Số lượng: " FontSize="18" FontWeight="Bold"></TextBlock>
+                            <TextBlock Text="{Binding Amount, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Name="txtAmount" TextAlignment="Left" TextWrapping="Wrap" FontSize="18" Foreground="Black" FontWeight="Normal"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <Button Content="Thêm vào giỏ hàng" Background="#1976D2" Foreground="White" FontWeight="Bold" FontSize="16" Height="50" Width="180" Margin="0,20,0,0" Click="ButtonAddCart_Click"></Button>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <TextBlock Text="Mô tả: " FontSize="18" FontWeight="Bold"></TextBlock>
+                    <TextBlock Text="{Binding CateID, Converter={StaticResource deScriptCategoryConverter}}" FontSize="16" Foreground="Black" FontStyle="Normal"></TextBlock>
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
+
+        <DockPanel Grid.Row="3" Grid.ColumnSpan="2" Margin="2,0,-2,0" LastChildFill="True" Background="LightCyan">
+            <StatusBar DockPanel.Dock="Bottom" Margin="60,0,0,0" Name="statusBar" Background="LightCyan" VerticalAlignment="Center">
+                <Button Width="40" Height="25" Content="&lt;" Name="PreviousButton" Click="PreviousButton_Click"></Button>
+                <Label Name="pagingInfoLabel" Content="Trang 1 đến 1"></Label>
+                <Button Width="40"  Height="25" Content="&gt;" Name="NextButton" Click="NextButton_Click"></Button>
+                <Label Content="Số lượng sản phẩm:"></Label>
+                <ComboBox Name="itemsPerPageComboBox" Width="40" SelectedIndex="0" SelectionChanged="itemsPerPageComboBox_SelectionChanged">
+                    <ComboBoxItem >5</ComboBoxItem>
+                    <ComboBoxItem>8</ComboBoxItem>
+                    <ComboBoxItem >10</ComboBoxItem>
+                </ComboBox>
+            </StatusBar>
+        </DockPanel>
+    </Grid>
+</Fluent:RibbonWindow>

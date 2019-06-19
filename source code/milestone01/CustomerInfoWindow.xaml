@@ -1,0 +1,38 @@
+﻿<Window x:Class="Milestone.CustomerInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Milestone"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize" WindowStyle="ToolWindow"
+        Title="Thông tin khách hàng" Height="250" Width="373.077">
+    <DockPanel>
+        <Border DockPanel.Dock="Bottom">
+            <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Height="30" HorizontalAlignment="Right" Margin="0, 5, 0, 5">
+                <Button Margin="5, 0, 5, 0" Click="saveButtonOrder_Click" Content="Lưu đơn hàng" IsDefault="True" Background="#1976D2"  Name="updateButtonQuantity" Foreground="White" Width="100" Height="25" Canvas.Left="103" Canvas.Top="151"/>
+                <Button Margin="5, 0, 5, 0" Name="deleteButtonProductDeTail" Click="cancelSaveButtonOrder_Click" Content="Hủy" Width="60" Height="25"  Canvas.Left="196" Canvas.Top="151"/>
+            </StackPanel>
+        </Border>
+        <StackPanel Background="#1976D2" Orientation="Vertical">
+            <TextBlock Text="Thông tin khách hàng" HorizontalAlignment="Center" FontSize="20" Foreground="White"  FontWeight="Bold" Margin="0, 20, 0, 0"/>
+            <Canvas>
+                <StackPanel Orientation="Vertical" Margin="10,0,10,0">
+                    <StackPanel Orientation="Horizontal"  Margin="0,10,0,0">
+                        <Label Content="Họ và tên:" Foreground="White"/>
+                        <TextBox Name="textBoxCustomerName" Margin="20,0,0,0" Width="220" Height="20"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <Label Content="Số điện thoại:" Foreground="White"/>
+                        <TextBox Name="textBoxCustomerPhone" Width="220" Height="20"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <Label Content="Địa chỉ:" Foreground="White"/>
+                        <TextBox Name="textBoxCustomerAddress" Margin="35,0,0,0" Width="220" Height="20"/>
+                    </StackPanel>
+                </StackPanel>
+            </Canvas>
+        </StackPanel>
+    </DockPanel>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="Milestone.InfomationOrderDetailList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:milestone01"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Thông tin đơn hàng" Height="300" Width="500">
+    <Window.Resources>
+        <local:doublePriceToStringPriceConverter x:Key="PriceConverter1"/>      
+    </Window.Resources>
+    <ListView Grid.Column="0" Grid.Row="1" Name="listInfoOrderDetail">
+        <ListView.View>
+            <GridView>
+                <GridViewColumn Header="Tên sản phẩm" DisplayMemberBinding="{Binding Name}"/>
+                <GridViewColumn Header="Giá tiền" DisplayMemberBinding="{Binding Price}"/>
+                <GridViewColumn Header="Số lượng" DisplayMemberBinding="{Binding Quantity}"/>
+                <GridViewColumn Header="Tổng tiền" DisplayMemberBinding="{Binding Total}"/>
+            </GridView>
+        </ListView.View>
+    </ListView>
+</Window>

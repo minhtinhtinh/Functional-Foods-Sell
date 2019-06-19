@@ -1,0 +1,77 @@
+﻿<Window x:Class="milestone01.CartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:milestone01"   
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Quản lý giỏ hàng và đơn hàng" Height="700" Width="1200"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Window.Resources>
+        <local:doublePriceToStringPriceConverter x:Key="PriceConverter"/>
+        <local:idCustomerOrderingToNameCustomerConverter x:Key="nameCustomerConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Giỏ Hàng" FontSize="20" FontWeight="Bold" TextAlignment="Center" Background="#1976D2" Foreground="White"></TextBlock>
+        <ListView Grid.Column="0" Grid.Row="1" Name="listCart" SelectionChanged="listViewCart_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Tên sản phẩm" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Giá tiền" DisplayMemberBinding="{Binding Price, Converter={StaticResource PriceConverter}}"/>
+                    <GridViewColumn Header="Số lượng" DisplayMemberBinding="{Binding Quantity}"/>
+                    <GridViewColumn Header="Tổng tiền" DisplayMemberBinding="{Binding Total,Converter={StaticResource PriceConverter}}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <StackPanel  Grid.Column="0" Grid.Row="2" Orientation="Horizontal">
+            <TextBlock Text="Tổng tiền: " Margin="20,10,0,0"></TextBlock>
+            <TextBlock Text="{Binding FinalTotal, Converter={StaticResource PriceConverter}}" Name="finalTotal" Margin="5,10,0,0"></TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal" Margin="0,0,20,0" HorizontalAlignment="Right">
+            <Button Background="#1976D2" Foreground="White" Content="Xóa tất cả giỏ hàng" Width="120" Margin="0,0,10,0" Height="30" HorizontalAlignment="Right" Click="ButtonRemoveAllCart_Click"/>
+            <Button Background="#1976D2" Foreground="White" Content="Lưu đơn hàng" Width="100" Height="30" HorizontalAlignment="Right" Click="ButtonSaveOrder_Click"/>
+        </StackPanel>
+
+        <TextBlock Grid.Column="1" Text="Danh Sách Đơn Hàng" FontSize="20" FontWeight="Bold" TextAlignment="Center" Background="#1976D2" Foreground="White"></TextBlock>
+        <DockPanel Grid.Column="1" Grid.Row="1" DockPanel.Dock="Right">
+            <Grid Grid.Row="2" Grid.Column="0">
+                <DataGrid Name="listOrdering" IsReadOnly="True"  AutoGenerateColumns="False" SelectionChanged = "listOrdering_SelectionChanged" MouseRightButtonDown="listOrdering_MouseRightButtonDown">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Khách Hàng" Binding="{Binding Customer_Id, Converter={StaticResource nameCustomerConverter}}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Giá trị đơn hàng" Binding="{Binding Total}"/>
+                        <DataGridTextColumn Header="Tình trạng" Binding="{Binding Order_state}"/>
+                        <DataGridTextColumn Header="Ngày thay đổi" Binding="{Binding Order_time}"/>
+                        
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </DockPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Background="White">
+            <StatusBar DockPanel.Dock="Bottom" Margin="0,5,0,5" Background="White" Name="statusBar" VerticalAlignment="Center">
+                <Button Width="40" Height="25" Margin="60,0,0,0" Content="&lt;" Name="PreviousButton" Click="PreviousButton_Click"></Button>
+                <Label Name="pagingInfoLabel" Content="Trang 1 đến 1"></Label>
+                <Button Width="40"  Height="25" Content="&gt;" Name="NextButton" Click="NextButton_Click"></Button>
+                <Label Content="Số lượng sản phẩm:"></Label>
+                <ComboBox Name="itemsPerPageComboBox" Width="40" SelectedIndex="0" SelectionChanged="itemsPerPageComboBox_SelectionChanged">
+                    <ComboBoxItem >5</ComboBoxItem>
+                    <ComboBoxItem>10</ComboBoxItem>
+                    <ComboBoxItem >15</ComboBoxItem>
+                </ComboBox>
+            </StatusBar>
+        </StackPanel>
+    </Grid>
+</Window>

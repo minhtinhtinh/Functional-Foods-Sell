@@ -1,0 +1,165 @@
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\milestone01.exe.config
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\DatabaseSales.mdf
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\DatabaseSales_log.ldf
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\milestone01.exe
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\milestone01.pdb
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\Aspose.Cells.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\Aspose.Words.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\ControlzEx.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\EntityFramework.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\EntityFramework.SqlServer.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\Fluent.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\Microsoft.Xaml.Behaviors.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\ControlzEx.xml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\EntityFramework.xml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\EntityFramework.SqlServer.xml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\Fluent.pdb
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\Fluent.xml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\Microsoft.Xaml.Behaviors.xml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\milestone01.csprojResolveAssemblyReference.cache
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\MainWindow.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\App.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\milestone01_Content.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\milestone01_MarkupCompile.cache
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\milestone01_MarkupCompile.lref
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\App.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\MainWindow.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\milestone01.g.resources
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\milestone01.Properties.Resources.resources
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\milestone01.csproj.GenerateResource.Cache
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\milestone01.exe
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\milestone01.pdb
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\AddCategory.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\AddCategory.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\EditCategory.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\EditCategory.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\EditProduct.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\EditProduct.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\AddProduct.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\obj\Debug\AddProduct.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\Project_Milestone_01\milestone01\bin\Debug\Milestone.exe.config
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Milestone.exe.config
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\DatabaseSales.mdf
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\DatabaseSales_log.ldf
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Milestone.exe
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Milestone.pdb
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Aspose.Cells.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Aspose.Words.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\ControlzEx.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\EntityFramework.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\EntityFramework.SqlServer.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Fluent.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Microsoft.Xaml.Behaviors.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\ControlzEx.xml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\EntityFramework.xml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\EntityFramework.SqlServer.xml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Fluent.pdb
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Fluent.xml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Microsoft.Xaml.Behaviors.xml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\milestone01.csprojResolveAssemblyReference.cache
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\AddCategory.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\AddProduct.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\EditCategory.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\EditProduct.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\MainWindow.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\App.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone_Content.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone_MarkupCompile.cache
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone_MarkupCompile.lref
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\App.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\AddCategory.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\AddProduct.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\EditCategory.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\EditProduct.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\MainWindow.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone.g.resources
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone.Properties.Resources.resources
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\milestone01.csproj.GenerateResource.Cache
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone.exe
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone.pdb
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Milestone.exe.config
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\DatabaseSales.mdf
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\DatabaseSales_log.ldf
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Milestone.exe
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Milestone.pdb
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Aspose.Cells.dll
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Aspose.Words.dll
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\ControlzEx.dll
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\EntityFramework.dll
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\EntityFramework.SqlServer.dll
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Fluent.dll
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Microsoft.Xaml.Behaviors.dll
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\ControlzEx.xml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\EntityFramework.xml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\EntityFramework.SqlServer.xml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Fluent.pdb
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Fluent.xml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\Microsoft.Xaml.Behaviors.xml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\AddCategory.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\AddProduct.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\CartChangeWindow.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\CartWindow.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\CustomerInfoWindow.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\EditCategory.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\EditProduct.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\MainWindow.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\OrderingEdit.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\App.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone_Content.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone_MarkupCompile.cache
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone_MarkupCompile.lref
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\App.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\AddCategory.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\AddProduct.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\CartChangeWindow.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\CartWindow.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\CustomerInfoWindow.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\EditCategory.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\EditProduct.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\MainWindow.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\OrderingEdit.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone.g.resources
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone.Properties.Resources.resources
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\milestone01.csproj.GenerateResource.Cache
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone.exe
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\Milestone.pdb
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\PieReport.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\ReportWindow.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\SellReport.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\PieReport.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\ReportWindow.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\SellReport.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\LiveCharts.dll
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\LiveCharts.Wpf.dll
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\LiveCharts.pdb
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\LiveCharts.xml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\LiveCharts.Wpf.pdb
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\LiveCharts.Wpf.xml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\InfomationOrderDetailList.g.cs
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\InfomationOrderDetailList.baml
+H:\LapTrinh_UDQL2\Project_Milestone\Project_Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\milestone01.csprojResolveAssemblyReference.cache
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\LiveCharts.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\LiveCharts.Wpf.dll
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\LiveCharts.pdb
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\LiveCharts.xml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\LiveCharts.Wpf.pdb
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\bin\Debug\LiveCharts.Wpf.xml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\CartChangeWindow.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\CartWindow.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\CustomerInfoWindow.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\InfomationOrderDetailList.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\OrderingEdit.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\PieReport.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\ReportWindow.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\SellReport.g.cs
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\CartChangeWindow.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\CartWindow.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\CustomerInfoWindow.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\InfomationOrderDetailList.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\OrderingEdit.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\PieReport.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\ReportWindow.baml
+E:\Hcmus\3nd\HK2\LT UDQL2\Milestone_01\Project_Milestone_01\source code\milestone01\obj\Debug\SellReport.baml

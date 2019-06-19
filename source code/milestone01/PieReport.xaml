@@ -1,0 +1,21 @@
+﻿<Window x:Class="Milestone.PieReport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Milestone"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Báo cáo kho" Height="668.454" Width="1107.069">
+    <Grid>
+        <TextBlock Name="txtWelcome" VerticalAlignment="Top" Text="Doanh thu từ ngày " TextAlignment="Right" FontSize="20" Margin="350,0,571,0"></TextBlock>
+        <TextBlock Name="txtWelcome1" VerticalAlignment="Top" Text="đến ngày " TextAlignment="Left" FontSize="20" Margin="434,32,571,0"></TextBlock>
+        <lvc:PieChart x:Name="pieChart" Margin="10,80,10,40" LegendLocation="Bottom">
+            
+        </lvc:PieChart>
+        <DatePicker Name="dpStart" HorizontalAlignment="Left" Margin="533,5,0,0" VerticalAlignment="Top" SelectedDateChanged="dpStart_SelectedDateChanged"/>
+        <DatePicker Name="dpEnd" HorizontalAlignment="Left" Margin="533,37,0,0" VerticalAlignment="Top" SelectedDateChanged="dpEnd_SelectedDateChanged"/>
+    </Grid>
+
+</Window>

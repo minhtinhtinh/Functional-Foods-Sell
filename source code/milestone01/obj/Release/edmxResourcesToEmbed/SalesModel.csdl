@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseSalesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DatabaseSalesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categories" EntityType="DatabaseSalesModel.Category" />
+    <EntitySet Name="Customers" EntityType="DatabaseSalesModel.Customer" />
+    <EntitySet Name="Orderings" EntityType="DatabaseSalesModel.Ordering" />
+    <EntitySet Name="OrderingDetails" EntityType="DatabaseSalesModel.OrderingDetail" />
+    <EntitySet Name="Products" EntityType="DatabaseSalesModel.Product" />
+    <AssociationSet Name="FK__Ordering__Custom__36B12243" Association="DatabaseSalesModel.FK__Ordering__Custom__36B12243">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Ordering" EntitySet="Orderings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderingD__Order__37A5467C" Association="DatabaseSalesModel.FK__OrderingD__Order__37A5467C">
+      <End Role="Ordering" EntitySet="Orderings" />
+      <End Role="OrderingDetail" EntitySet="OrderingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="fk_orderingdetail_product" Association="DatabaseSalesModel.fk_orderingdetail_product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="OrderingDetail" EntitySet="OrderingDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Descript" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Orderings" Relationship="DatabaseSalesModel.FK__Ordering__Custom__36B12243" FromRole="Customer" ToRole="Ordering" />
+  </EntityType>
+  <EntityType Name="Ordering">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Total" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Order_state" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Order_time" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Customer_Id" Type="Int32" />
+    <NavigationProperty Name="Customer" Relationship="DatabaseSalesModel.FK__Ordering__Custom__36B12243" FromRole="Ordering" ToRole="Customer" />
+    <NavigationProperty Name="OrderingDetails" Relationship="DatabaseSalesModel.FK__OrderingD__Order__37A5467C" FromRole="Ordering" ToRole="OrderingDetail" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="OrderingDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Total" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Ordering_Id" Type="Int32" />
+    <NavigationProperty Name="Ordering" Relationship="DatabaseSalesModel.FK__OrderingD__Order__37A5467C" FromRole="OrderingDetail" ToRole="Ordering" />
+    <Property Name="Product_Id" Type="Int32" />
+    <NavigationProperty Name="Product" Relationship="DatabaseSalesModel.fk_orderingdetail_product" FromRole="OrderingDetail" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CateID" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Int32" />
+    <Property Name="InDate" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="OrderingDetails" Relationship="DatabaseSalesModel.fk_orderingdetail_product" FromRole="Product" ToRole="OrderingDetail" />
+  </EntityType>
+  <Association Name="FK__Ordering__Custom__36B12243">
+    <End Type="DatabaseSalesModel.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="DatabaseSalesModel.Ordering" Role="Ordering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ordering">
+        <PropertyRef Name="Customer_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderingD__Order__37A5467C">
+    <End Type="DatabaseSalesModel.Ordering" Role="Ordering" Multiplicity="0..1" />
+    <End Type="DatabaseSalesModel.OrderingDetail" Role="OrderingDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ordering">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderingDetail">
+        <PropertyRef Name="Ordering_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_orderingdetail_product">
+    <End Type="DatabaseSalesModel.Product" Role="Product" Multiplicity="0..1" />
+    <End Type="DatabaseSalesModel.OrderingDetail" Role="OrderingDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderingDetail">
+        <PropertyRef Name="Product_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

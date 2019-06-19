@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseSalesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="ntext" />
+    <Property Name="Descript" Type="ntext" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nchar" MaxLength="10" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Ordering">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Total" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="Customer_Id" Type="int" />
+    <Property Name="Order_state" Type="nvarchar" MaxLength="50" />
+    <Property Name="Order_time" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="OrderingDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Price" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Total" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="Ordering_Id" Type="int" />
+    <Property Name="Product_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Price" Type="nvarchar(max)" />
+    <Property Name="Image" Type="nvarchar(max)" />
+    <Property Name="CateID" Type="int" Nullable="false" />
+    <Property Name="Amount" Type="int" />
+    <Property Name="InDate" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="fk_orderingdetail_product">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="OrderingDetail" Type="Self.OrderingDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderingDetail">
+        <PropertyRef Name="Product_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DatabaseSalesModelStoreContainer">
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ordering" EntityType="Self.Ordering" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderingDetail" EntityType="Self.OrderingDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_orderingdetail_product" Association="Self.fk_orderingdetail_product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="OrderingDetail" EntitySet="OrderingDetail" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
